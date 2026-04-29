@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Николай Мазенцев — CEO & Founder, Chocofood</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap');
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--gold:#C9A84C;--gold-light:#E8C96A;--gold-dim:rgba(201,168,76,0.15);--bg:#0A0A0A;--surface:#141414;--border:#1e1e1e;--text:#F0EDE6;--muted:#888}
+    html,body{height:100%}
+    body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px;-webkit-font-smoothing:antialiased}
+    .card{background:var(--surface);border:1px solid rgba(201,168,76,0.2);border-radius:16px;width:100%;max-width:440px;padding:48px 40px 40px;position:relative;overflow:hidden}
+    .card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    .card::after{content:'';position:absolute;top:-120px;right:-80px;width:260px;height:260px;background:radial-gradient(circle,var(--gold-dim) 0%,transparent 70%);pointer-events:none}
+    .monogram{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-light));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--bg);margin-bottom:28px}
+    h1{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;letter-spacing:-0.5px;margin-bottom:8px}
+    .role{color:var(--gold);font-size:14px;font-weight:500;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
+    .company{color:var(--muted);font-size:15px;margin-bottom:32px}
+    .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.3),transparent);margin:0 0 28px}
+    .contact{display:flex;align-items:center;gap:12px;padding:12px 0;text-decoration:none;color:var(--text);font-size:14px;transition:color 0.2s}
+    .contact:hover{color:var(--gold)}
+    .contact svg{width:18px;height:18px;fill:none;stroke:var(--gold);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+    .footer{margin-top:32px;text-align:center;color:var(--muted);font-size:12px;letter-spacing:1px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="monogram">Н</div>
+    <div class="role">CEO & Founder</div>
+    <h1>Николай Мазенцев</h1>
+    <p class="company">Chocofood · доставка еды · Казахстан</p>
+    <div class="divider"></div>
+    <a href="mailto:maz@choco.kz" class="contact">
+      <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><polyline points="2 4 12 13 22 4"/></svg>
+      maz@choco.kz
+    </a>
+    <div class="footer">CHOCOFOOD</div>
+  </div>
+</body>
+</html>
