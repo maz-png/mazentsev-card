@@ -6,134 +6,37 @@
   <title>Николай Мазенцев — CEO & Founder, Chocofood</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --gold: #C9A84C;
-      --gold-light: #E2C878;
-      --gold-dim: rgba(201,168,76,0.15);
-      --bg: #0D0D0D;
-      --bg-card: #141414;
-      --bg-surface: #1A1A1A;
-      --text: #F5F5F5;
-      --text-muted: #888;
-      --border: rgba(201,168,76,0.2);
-    }
-    html, body { height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      -webkit-font-smoothing: antialiased;
-    }
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      width: 100%;
-      max-width: 440px;
-      padding: 48px 40px 40px;
-      position: relative;
-      overflow: hidden;
-    }
-    .card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    }
-    .card::after {
-      content: '';
-      position: absolute;
-      top: -100px; right: -60px;
-      width: 240px; height: 240px;
-      background: radial-gradient(circle, var(--gold-dim) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .monogram {
-      width: 64px; height: 64px;
-      border: 2px solid var(--gold);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 28px;
-      font-weight: 700;
-      color: var(--gold);
-      margin-bottom: 28px;
-    }
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 8px;
-    }
-    .role {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      margin-bottom: 6px;
-    }
-    .company {
-      font-size: 14px;
-      color: var(--text-muted);
-      margin-bottom: 32px;
-    }
-    .divider {
-      height: 1px;
-      background: var(--border);
-      margin-bottom: 24px;
-    }
-    .contact a {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--text);
-      text-decoration: none;
-      font-size: 15px;
-      padding: 10px 20px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      background: var(--bg-surface);
-    }
-    .contact a:hover {
-      border-color: var(--gold);
-      color: var(--gold);
-      background: var(--gold-dim);
-    }
-    .contact a svg {
-      width: 18px; height: 18px;
-      fill: none;
-      stroke: currentColor;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--gold:#C9A84C;--gold-light:#E2C878;--gold-dim:rgba(201,168,76,0.15);--bg:#0D0D0D;--bg-card:#141414;--bg-surface:#1A1A1A;--text:#F5F5F5;--text-muted:#888;--border:rgba(201,168,76,0.2)}
+    html,body{height:100%}
+    body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    body::before{content:'';position:fixed;top:-30%;left:-10%;width:50%;height:70%;background:radial-gradient(ellipse,rgba(201,168,76,0.06),transparent 70%);pointer-events:none}
+    .card{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;width:100%;max-width:440px;padding:48px 40px 40px;position:relative;overflow:hidden;box-shadow:0 4px 60px rgba(0,0,0,0.5)}
+    .card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    .monogram{width:64px;height:64px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;margin-bottom:28px;font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--gold)}
+    h1{font-size:24px;font-weight:600;letter-spacing:-0.02em;margin-bottom:6px}
+    .role{color:var(--gold);font-size:14px;font-weight:500;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:4px}
+    .company{color:var(--text-muted);font-size:14px;margin-bottom:32px}
+    .divider{height:1px;background:var(--border);margin-bottom:24px}
+    .contact{display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--bg-surface);border:1px solid rgba(201,168,76,0.1);border-radius:10px;text-decoration:none;color:var(--text);font-size:14px;transition:all 0.2s ease}
+    .contact:hover{border-color:var(--gold);background:var(--gold-dim)}
+    .contact svg{width:18px;height:18px;flex-shrink:0;color:var(--gold)}
+    .footer{margin-top:32px;text-align:center;font-size:11px;color:var(--text-muted);letter-spacing:0.05em}
+    @media(max-width:480px){.card{padding:36px 24px 28px}h1{font-size:20px}}
   </style>
 </head>
 <body>
   <div class="card">
     <div class="monogram">N</div>
+    <div class="role">CEO & Founder</div>
     <h1>Николай Мазенцев</h1>
-    <p class="role">CEO & Founder</p>
-    <p class="company">Chocofood · Доставка еды · Казахстан</p>
+    <p class="company">Chocofood · доставка еды · Казахстан</p>
     <div class="divider"></div>
-    <div class="contact">
-      <a href="mailto:maz@choco.kz">
-        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
-        maz@choco.kz
-      </a>
-    </div>
+    <a href="mailto:maz@choco.kz" class="contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 6 10-6"/></svg>
+      <span>maz@choco.kz</span>
+    </a>
+    <div class="footer">CHOCOFOOD © 2025</div>
   </div>
 </body>
 </html>
